@@ -78,17 +78,134 @@
     background-image:linear-gradient(#FF589B #FF136F) ;
     background-color: #FF136F;
     text-decoration: none;
-    padding: 20px 30px;
+    padding: 10px 30px;
     display: inline-block;
     color: white;
+    font-size: 20px;
+    border-radius: 10px
 }
 
+/* categories */
+.cat-items {
+     display: grid; 
+    grid-template-columns: repeat(3,auto);
+    gap: 2%;
+}
+.cat-item{
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 50px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    font-size: 25px;
+}
+#item-1{
+    background-color:#FF9C35;
+}
+#item-2{
+    background-color:#FF589B;
+}
+#item-3{
+    background-color:#3F07F8;
+}
+.cat-item img {
+    width: 68px;
+}
+
+.shoes{
+    background-color:#F4F4F4 ;
+}
+.shoes-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shoes-title a{
+    color: #FF9C35;
+    text-decoration: none;
+}
+.shoes-cards {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 2%;
+}
+.shoes-card{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+
+}
+.shoes-card img {
+    width: 100%;
+}
+.shoes-card .price {
+font-size: 20px;
+}
+.shoes-card h3{
+    font-size: 25px;
+}
+.shoes-card a {
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    display: inline;
+    border-radius: 10px;
+    margin: 5%;
+}
+/* footer section */
+footer.footer-section {
+    margin: 5%;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 1080px;
+    margin: 0 auto;
+    background-color: #FFF2F1;
+    border-radius: 15px;
+    align-items: center;
+
+    
+}
+section.email {
+    padding: 35px;
+}
+
+input[type="email"] {
+    padding: 20px 50px;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+}
+.email-btn  {
+    padding: 20px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #FF136F;
+    cursor: pointer;
+    background-image: linear-gradient(#FF589B #FF136F);
+}
+.email-titel {
+    text-align: center;
+}
+
+/* Media Quary Css */
 @media (max-width: 480px) {
     .container{
     width:100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+   
     }
     .navigation-bar{
         display: flex;
@@ -106,6 +223,30 @@
     .slider-section{
         flex-direction: column;
     }
-    
-    
+    .cat-items {
+        /* display: grid;  */
+       grid-template-columns: repeat(1,auto);
+       gap: 8%;
+       padding: 0 10%;
+   }
+   .shoes{
+    padding-bottom: 70px; 
+   }
+   .shoes-title{
+     gap: 2%;
+   }
+   .shoes-cards{
+    grid-template-columns: repeat(1, auto);
+    padding: 20px 20px;
+    gap: 2%;
+   }
+   .shoes-card{ 
+     padding: 20px 20px;
+   }
+   .footer-container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   }
 }
