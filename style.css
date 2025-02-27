@@ -1,3 +1,6 @@
+body{
+    font-family:"Poppins", serif;;
+}
 .container{
     width:1080px;
     margin: 0 auto;
@@ -83,7 +86,9 @@
     color: white;
     font-size: 20px;
     border-radius: 10px
+   
 }
+
 
 /* categories */
 .cat-items {
@@ -122,6 +127,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+ h2 {
+    font-size: 35px;
 }
 .shoes-title a{
     color: #FF9C35;
